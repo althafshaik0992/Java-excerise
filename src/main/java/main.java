@@ -30,10 +30,32 @@ public class main {
         System.out.println("teen " + teen1);
 
 
-        double cal= AreaCalculator.area(-1.0);
-        double rec =AreaCalculator.area(2,3);
+        double cal = AreaCalculator.area(-1.0);
+        double rec = AreaCalculator.area(2, 3);
         System.out.println("circle area " + cal);
         System.out.println("rec area " + rec);
+
+
+        BankAccount bankAccount = new BankAccount(12345678,"althaf","althaf@gmail.com",1234567899,2000.0);
+        System.out.println("Accountnumber  " +bankAccount.getAccountnumber());
+        System.out.println("Customername  " +bankAccount.getCustomername());
+        System.out.println("Email  " +bankAccount.getEmail());
+        System.out.println("Phonenumber  " +bankAccount.getPhonenumber());
+        System.out.println("Balance  " +bankAccount.getBalance());
+        bankAccount.deposit(100.0);
+        bankAccount.withdraw(50.0);
+
+
+        DayOfTheWeekChallenge.printDayOfTheWeek(3);
+
+//        boolean leapyear = NumberOfDaysiInMonth.isLeapYear(2000);
+//        System.out.println(" leap year " + leapyear);
+
+
+        NumberOfDaysiInMonth.getDaysInMonth(3,2000);
+
+
+
     }
 }
 
