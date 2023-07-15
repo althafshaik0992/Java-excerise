@@ -1,3 +1,5 @@
+package oops;
+
 public class BarkingDog {
 
     public static boolean shouldWakeUp(boolean barking, int hourOfDay) {

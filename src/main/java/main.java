@@ -1,7 +1,28 @@
+import oops.*;
+
+import vehicle.Camry;
+
+import inhertiance.*;
+
 public class main {
 
 
     public static void main(String[] args) {
+
+
+        Camry camry = new Camry(36);
+        camry.accelerate(30);
+        camry.accelerate(20);
+
+
+
+        Animal animal=new Animal("animal",1,1,1,1);
+        Dog dog = new Dog("ruffle",1,1,1,2,2,1,"silkey");
+
+        dog.eat();
+        dog.move(5);
+        dog.run();
+        dog.walk();
 
         long calc = speedconverter.tomilesperhour(12.5);
         System.out.println("caluction = " + calc);
